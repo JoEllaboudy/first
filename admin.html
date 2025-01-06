@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="teacher-section">
+        <h1>Admin - Manage Exams</h1>
+        <ul id="examList"></ul>
+        <button type="button" id="addExamButton" class="modern-button">Add New Exam</button>
+    </div>
+
+    <!-- The Modal for Adding/Editing Exam -->
+    <div id="examModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Add New Exam</h2>
+            <form id="examForm">
+                <label for="examTitle">Exam Title:</label>
+                <input type="text" id="examTitle" name="examTitle" required>
+                <div id="questionsContainer"></div>
+                <button type="button" id="addQuestionButton" class="modern-button">Add Question</button>
+                <button type="button" id="saveExamButton" class="modern-button">Save Exam</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
